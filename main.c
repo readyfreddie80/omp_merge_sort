@@ -4,18 +4,20 @@
 #include <omp.h>
 #include <assert.h>
 
+
 void initialization(int *up, int N, int a, int b) {
     srand(time(NULL));
     for(int i = 0; i < N; i++) {
         up[i] = rand() % (b - a + 1) + a;
     }
 }
+
+
 int bin_search(int *arr, int left, int right, int val) {
     if(arr[right] < val)
         return right;
     if(arr[left] >= val)
         return left - 1;
-
 
     int mid;
     while(left != right) {
@@ -94,7 +96,6 @@ int* merge_sort(int *up, int *down, int left, int right, int M) {
 
         }
     }
-
 
     // слияние
     int mid_1 = (middle + left) / 2;
