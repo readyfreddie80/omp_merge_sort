@@ -63,10 +63,6 @@ void merge(int *target, int ind, int *X, int lX, int rX, int *Y, int lY, int rY)
   }
 }
 
-
-int* parllel_merge(int* target, int pos, int* a, int la, int ra, int* b, int lb, int rb) {
-
-}
 int* merge_sort(int *up, int *down, int left, int right, int M) {
 
 
